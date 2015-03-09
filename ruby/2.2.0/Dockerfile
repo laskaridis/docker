@@ -34,7 +34,6 @@ RUN apt-get update && apt-get install -y \
 USER ruby
 WORKDIR /home/ruby
 
-
 # Install rvm and ruby
 RUN /bin/bash -l -c "gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3"
 RUN /bin/bash -l -c "curl -L https://get.rvm.io | bash -s stable"
